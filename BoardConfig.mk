@@ -76,5 +76,8 @@ BOARD_ROOT_EXTRA_FOLDERS += metadata
 TARGET_BOARD_PLATFORM := mt6765
 BOARD_HAS_MTK_HARDWARE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
+
 # Inherit the proprietary files
 include vendor/samsung/ceres/BoardConfigVendor.mk
